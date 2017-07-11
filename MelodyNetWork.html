@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="清韵,清韵公司,清韵互联网,清韵官网,清韵互联,赤峰市互联网,赤峰市网络,赤峰市网站建设,网站建设,MELODY">
+<meta name="description" content="赤峰市清韵互联网有限责任公司，简称清韵公司，英文简称MELODY，是一家互联网公司。公司主要经营，网站建设，软件研发，移动终端等业务。">
+<link rel="stylesheet" TYPE="text/css" href="css/baseM.css"/>
+<html>
+<head>
+    <title>清韵互联网有限责任公司</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <!-- top section-->
+        <div class="top">
+            <div class="top_con">
+                <div class="tel">咨询热线：18947603637</div>
+                <div class="email">咨询邮箱：melodycorp@163.com</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- end top section-->
+        <!-- top nav-->
+        <div class="head_bg">
+            <div class="header_nav">
+                <div class="logo fl">
+                    <a href="http://corp.goldtoad.net/index.php/Portals/index/index.html">
+                        <img src="image/logo.png" alt="赤峰市清韵互联网有限责任公司" style="width: 151px;height: 39px"/>
+                    </a>
+                </div>
+                <div class="menu fr">
+                   <nav>
+                       <ul>
+                           <li><a href="melodyInner/index.html" target="bottomContent" id="1">网站首页</a></li>
+                           <li><a href="melodyInner/about.html" target="bottomContent" id="2">关于我们</a></li>
+                           <li><a href="melodyInner/case.html" target="bottomContent" id="3">经典案例</a></li>
+                           <li><a href="melodyInner/moveApp.html" target="bottomContent" id="4">移动终端</a></li>
+                           <li><a href="melodyInner/solution.html" target="bottomContent" id="5">解决方案</a></li>
+                           <li><a href="melodyInner/concatUs.html" target="bottomContent" id="6">联系我们</a></li>
+                       </ul>
+                       <div class="clear"></div>
+                   </nav>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--end top nav-->
+        <div class="bottomsection">
+            <iframe name="bottomContent" id="bottomContent" width="100%" id="bottomContent" src="melodyInner/index.html" frameborder="0" scrolling="no" onload="setIframeHeight(this)">
+
+            </iframe>
+
+        </div>
+        <footer>
+            <div class="bootom">
+                <div class="bootom_con" style="color:#eee">
+                    @<a href="http://www.melody.cn.com" style="color:#eee">2014 - 2017 赤峰市清韵互联网有限责任公司 版权所有</a>地址：赤峰市红山区桥北物流园区蒙东云计算大厦
+                </div>
+
+            </div>
+        </footer>
+
+
+    </div>
+</header>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+//ifame 高度自适应
+function setIframeHeight(iframe) {
+    if (iframe) {
+        //通过contentWindow得到iframe包含页面的window对象，然后就可以正常访问页面元素了；
+        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+        //如果iframe下body有内容，则获取其高度，以便后续进行调整
+        if (iframeWin.document.body) {
+            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+        }
+    }
+};
+
+
+$(function(){
+   //nav 选中切换样式
+    $(".menu ul li a").on('click',function(){
+        $(this).addClass("a1").parents("li").siblings().children("a").removeClass("a1");
+    });
+
+
+
+
+});
+
+</script>
+</html>
